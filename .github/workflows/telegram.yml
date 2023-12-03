@@ -13,8 +13,8 @@ jobs:
         chat: ${{ secrets.chat }}
         token: ${{ secrets.token }}
         status: ${{ job.status }}
-  echo:
+echo:
   runs-on: ubuntu-latest
   steps:
-  -name: echo matrix
-  run: echo {{ matrix.os }}
+  - name: echo matrix
+    run: echo {{ matrix.os }}
