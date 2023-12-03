@@ -1,0 +1,14 @@
+name: Telegram pm sender
+on:
+  push:
+    branches: master
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+    - name: sending is comming
+      uses: yanzay/notify-telegram@v0.1.0
+      if: always()
+      with:
+        chat: ${{ secrets.chat }}
+        status: ${{ job.status }}
