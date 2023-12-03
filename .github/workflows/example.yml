@@ -1,7 +1,7 @@
 name: kes testing
 on:
   push:
-    branches: main
+    branches: master 
 jobs:
   echo:
     runs-on: ubuntu-latest
