@@ -1,0 +1,11 @@
+name: kes testing
+on:
+        push:
+                branches: main
+        jobs:
+                echoname:
+                        runs-on:
+                                ubuntu-latest
+                        steps:
+                                - name: echoe a kososher msg
+                                - run: echo hello world, this is first workflow
