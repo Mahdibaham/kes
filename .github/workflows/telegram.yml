@@ -11,4 +11,5 @@ jobs:
       if: always()
       with:
         chat: ${{ secrets.chat }}
+        token: ${{ secrets.token }}
         status: ${{ job.status }}
